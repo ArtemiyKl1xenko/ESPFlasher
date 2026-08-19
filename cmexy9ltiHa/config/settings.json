@@ -1,0 +1,41 @@
+{
+  "ui": {
+    "theme": "dark",
+    "window_width": 1200,
+    "window_height": 700,
+    "remember_window_size": true,
+    "show_help_on_startup": false,
+    "font_size": 10,
+    "monospace_font": "Courier New"
+  },
+  "flash": {
+    "default_baud_rate": 460800,
+    "default_flash_freq": "80m",
+    "default_flash_mode": "dio",
+    "auto_detect": true,
+    "verify_after_write": true,
+    "erase_before_write": false
+  },
+  "monitor": {
+    "baud_rate": 115200,
+    "auto_scroll": true,
+    "buffer_size": 10000,
+    "timestamp": true,
+    "filter_enabled": false,
+    "filter_text": ""
+  },
+  "advanced": {
+    "enable_batch_flashing": true,
+    "thread_pool_size": 4,
+    "enable_backups": true,
+    "backup_dir": "./backups",
+    "enable_analytics": false,
+    "enable_updates": true
+  },
+  "github": {
+    "api_token": "",
+    "auto_download_latest": false,
+    "cache_firmware": true,
+    "cache_dir": "./firmware_cache"
+  }
+}

@@ -1,0 +1,75 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>77655073-8073-46b3-b4fc-3e3162c6a873</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>cmexy9ltiHa</Name>
+    <RootNamespace>cmexy9ltiHa</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app_main.py" />
+    <Compile Include="cmexy9ltiHa.py" />
+    <Compile Include="config_manager.py" />
+    <Compile Include="core\device_manager.py" />
+    <Compile Include="core\firmware_manager.py" />
+    <Compile Include="core\settings_manager.py" />
+    <Compile Include="core\__init__.py" />
+    <Compile Include="esp_utils.py" />
+    <Compile Include="examples_configs.py" />
+    <Compile Include="flasher_manager.py" />
+    <Compile Include="help_system.py" />
+    <Compile Include="integrations\github_api.py" />
+    <Compile Include="integrations\ota_manager.py" />
+    <Compile Include="integrations\platformio_bridge.py" />
+    <Compile Include="integrations\__init__.py" />
+    <Compile Include="launcher.py" />
+    <Compile Include="models.py" />
+    <Compile Include="test_integration.py" />
+    <Compile Include="ui\advanced_monitor.py" />
+    <Compile Include="ui\batch_flasher.py" />
+    <Compile Include="ui\custom_widgets.py" />
+    <Compile Include="ui\memory_viewer.py" />
+    <Compile Include="ui\theme_manager.py" />
+    <Compile Include="ui\__init__.py" />
+    <Compile Include="utils\analytics.py" />
+    <Compile Include="utils\backup_manager.py" />
+    <Compile Include="utils\error_analyzer.py" />
+    <Compile Include="utils\__init__.py" />
+    <Compile Include="version.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README-PRO.md" />
+    <Content Include="README.md" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="core\" />
+    <Folder Include="integrations\" />
+    <Folder Include="ui\" />
+    <Folder Include="utils\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
