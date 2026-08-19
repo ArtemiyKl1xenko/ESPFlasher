@@ -21,14 +21,11 @@ pip install -r requirements.txt
 ### Как запустить из исходного кода
 Скачиваем файлы проекта, открываем терминал в корневой папке и пишем:
 ```bash
-# 1. Клонируем репозиторий
 git clone https://github.com/ArtemiyKl1xenko/ESPFlasher/
 cd ESPFlasher/cmexy9ltiHa
 
-# 2. Устанавливаем зависимости
 pip install -r requirements.txt
 
-# 3. Запускаем
 python launcher.py
 ```
 
